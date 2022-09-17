@@ -32,7 +32,7 @@ void *GetImageInfo() {
 }
 
 void PatchArray() {
-
+    //StartConsole();
     uintptr_t baseAddress = (uintptr_t) GetImageInfo();
     uint64_t *arrayAddress = (uint64_t *) (baseAddress + ArrayOffset);
     if (*arrayAddress > 0x60000000)
